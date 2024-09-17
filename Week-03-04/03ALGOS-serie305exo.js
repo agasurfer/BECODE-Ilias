@@ -38,6 +38,9 @@ let celTofar = (x) => { return (x * 9/5) + 32}
 
 let farToCel = (x) => { return (x - 32) * 5/9}
 
+
+                                                            // BEAUCOUP PLUS SIMPLE
+
 /*function convert(temp) {
     temp = temp.toLowerCase();  
     let x = parseFloat(temp);  
