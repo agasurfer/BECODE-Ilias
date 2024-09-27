@@ -1,4 +1,4 @@
-function caesarCipher(str, num) {
+/*function caesarCipher(str, num) {
    
     const alphabet = "abcdefghijklmnopqrstuvwxyz"
    
@@ -30,6 +30,28 @@ function caesarCipher(str, num) {
 console.log(final);
 
 
+}
+*/
+function caesarCipher(str, num) {
+    const alphabet = "abcdefghijklmnopqrstuvwxyz";
+    let final = "";
+
+    num = num % 26;
+
+    str.split('').forEach(char => {
+        let lettreActuelle = char.toLowerCase();
+
+        if (alphabet.includes(lettreActuelle)) {
+            let indexActuel = alphabet.indexOf(lettreActuelle);
+            let indexNew = (indexActuel + num + 26) % 26; // Eviter les index négatifs
+
+            final += alphabet[indexNew];
+        } else {
+            final += char;
+        }
+    });
+
+    console.log(final);
 }
 
 caesarCipher("zoo keeper", 2); //----> "bqq mggrgt"
