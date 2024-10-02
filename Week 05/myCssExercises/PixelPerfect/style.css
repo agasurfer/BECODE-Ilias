@@ -18,7 +18,8 @@ body {
 .container {
     position: relative;
     margin: 0 auto;
-    max-width: 77%;
+    /* max-width: 77%; */
+    max-width: 1110px;
     width: 100%;
     background-color: #F3F3F3;
     min-height: 100vh;
