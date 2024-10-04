@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allan:wght@400;700&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2D4480;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Noto Sans Display", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.container {
+    position: relative;
+    width: 288px;
+    height: 503px;
+    display: flex;
+}
+
+.screen {
+    width: 288px;
+    height: 469px;
+    border-radius: 27px 27px 27px 27px;
+    background: #FFFFFF;
+    display: flex;
+    box-shadow: 5px 20px 50px 0px #00000099;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 36px;
+    text-align: left;
+    margin-top: 36px;
+    margin-bottom: 25px
+}
+
+.f1, .f2, .f3, .f4, .f5 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    padding: 8px;
+    padding-left: 50px;
+}
+
+.f1 img, .f2 img, .f3 img, .f4 img, .f5 img {
+    margin-right: 20px;
+}
+
+
+hr {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 188px;
+    border: 1px solid #000000
+}
+
+.free {
+    display: flex;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.13em;
+    text-align: left;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+.forever {
+    font-family: "Allan";
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    text-transform: capitalize;
+    color: #2D4480;
+    transform: translateX(3.5em);
+}
+
+.getstarted {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32.8px;
+    letter-spacing: 0.06em;
+    width: 181px;
+    height: 68px;
+    background-color: #FFBC0F;
+    border-radius: 27px 27px 27px 27px;
+}
+
+
+
