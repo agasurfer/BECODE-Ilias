@@ -1,0 +1,46 @@
+@media screen and (min-width: 364px)/*  and (max-width: 768px) */ {
+    .a {
+        background-color: gold;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+    .a {
+        background-color: initial;
+    }
+    .b {
+        background-color: pink;
+    }
+    
+}
+
+@media screen and (min-width: 1280px) {
+    .a, .b {
+        background-color: initial;
+    }
+    .c {
+        background-color: chocolate;
+    }
+    
+}
+
+@media screen and (min-width: 1440px) {
+    .a, .b, .c {
+        background-color: initial;
+    }
+    .d {
+        background-color: cadetblue;
+    }
+    
+}
+
+@media screen and (min-width: 1920px) {
+    .a, .b, .c, .d {
+        background-color: initial;
+    }
+    .e {
+        background-color: cornflowerblue;
+    }
+    
+}
