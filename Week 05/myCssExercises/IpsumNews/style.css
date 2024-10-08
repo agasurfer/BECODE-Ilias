@@ -82,12 +82,16 @@ nav a:hover {
 }
 
 .phototype {
- display: flex;
- justify-content: center;
- align-items: center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .phototype img {
     object-fit: cover;
+   /*  max-width: 100%;
+    min-width: 50%; */      /* Pour rendre l'image responsive*/
+    /* height: auto; */
 
 }
 
