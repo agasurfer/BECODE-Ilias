@@ -70,7 +70,7 @@ nav a:hover {
 
 .containercentre {
     display: grid;
-    background-color: black;
+    background-color: #232323;
     width: 100vw;
     height: 630px;
     padding-left: 120px;
