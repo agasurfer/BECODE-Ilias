@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import 'utilities';
+@import 'layout';
+@import 'desktop';
+
+header .decoration {
+    display: none;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 38.4px;
+    text-align: left;
+    color: white;
+    text-transform: uppercase;
+    
+    span {
+        color: #E6606C;
+    } 
+
+}
+
+.navbar li a {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+    color: white;
+
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 300;
+    line-height: 76.8px;
+    letter-spacing: 0.045em;
+    text-align: left;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+h2 {
+    font-family: "Barlow Condensed";
+    font-size: 56px;
+    font-weight: 300;
+    line-height: 64px;
+    text-align: left;
+    color: #FFFFFF;
+
+
+}
+
+
+h3 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38.4px;
+    letter-spacing: 0.045em;
+    text-align: left;
+    color: #E8AB36;
+    text-transform: uppercase;
+}
+
+h4 {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-align: left;
+    color: #FFFFFF80;
+    text-transform: uppercase;
+
+
+
+}
+
+
+
+.topBox p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: 0.045em;
+    text-align: left;
+    color: #EFEFEF;
+    max-width: 500px;
+    opacity: 70%;
+}
+
+.topBox a {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.8px;
+    letter-spacing: 0.045em;
+    text-align: left;
+    text-transform: uppercase
+
+}
+
+.botBox p , .intro p {
+    color:  #FFFFFF80;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+
+}
+
+.article {
+    .texte {
+        font-family: "Barlow Condensed";
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 32px;
+        text-align: left;
+        color: #FFFFFF;
+    }
+    .date {
+        
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: left;
+        color: #FFFFFF80
+
+    }
+}
+
+.btnStart {
+    @include btn;
+    background: #E6606C;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.btnKnow {
+    @include btn;
+    background: white;
+    color: black;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px
+}
+
+.menu, .services {
+    @include menuColor;
+}
+
+.copyright {
+    @include copyright;
+}
+
+.terms, .privacy {
+    @include copyright;
+    color: white;
+}
+
+
+
+

@@ -1,0 +1,68 @@
+@media (min-width: 950px) {
+
+    .container {
+        max-width: 1440px;
+        width: 100%;
+        /* padding: 0 30px; */
+        overflow: hidden;
+        
+        
+        
+        
+    }
+
+  
+
+
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 35px; 
+    
+    } 
+
+
+
+    header::after {
+        content: "";
+        position: absolute;
+        width: 730px;
+        max-width: 100%;
+        height: 747px;
+        top: -12%;
+        left: 60.5%;
+        background-image: url(https://s3-alpha-sig.figma.com/img/cc1b/e9a2/6b5285619ac1312604a5100963c18d50?Expires=1730073600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZsZpBVHx5L-ognq4QX3ltYkRYOM~c54BpX~YpLzFiG4Kjy0rj~XL1-4SCxVAB33hhM6WGayMDljfBD1nfdRPsnb~MzteDkkVabEgUHoSh9WIgkwLhpu2LuxjxOXiiu6uRjev6Lt-us6FI5rfxIHFyvQE5ViPNnlGFDAOdMpV-f3cK27a1Y2R7RbWLSmGbr31XVOTB3EiwDDkM4FrMxyMlnzyvmdWvycQeFBxWe3Y8RzaMQhpFb8mnZmuw3RyytQKwAFkF3eUL8CTyIW0OLhsUV3Fq4-99wqGqI4ZLiE~tbzz2S6rvsz1fSzXxSzFQIPgJO5FPW4T1oJJZbEe3CI9TA__);
+        
+    }
+
+    .hero .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .midBox {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .botBox {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .articles {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 2fr;
+    }
+
+    .articles .intro {
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+        place-items: center;
+    }
+
+
+}
