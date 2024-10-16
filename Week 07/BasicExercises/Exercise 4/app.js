@@ -32,7 +32,7 @@ const pokeList = document.querySelector(".container");
 
 for (let i = 1; i <= 151 ; i++) { 
 
-     
+setTimeout(() => {  
 
     const pokeItem = document.createElement("div")
 
@@ -47,6 +47,6 @@ for (let i = 1; i <= 151 ; i++) {
     
 pokeList.appendChild(pokeItem);
 
-
+}, i *500)
 
 }
