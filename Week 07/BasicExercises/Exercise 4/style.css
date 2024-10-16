@@ -1,0 +1,15 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    min-width: 340px;
+    max-width: 1110px;
+    display:grid;
+    grid-template-columns: repeat(7, 1fr)  ;
+    place-items: center;
+    justify-content: center;
+}
+
