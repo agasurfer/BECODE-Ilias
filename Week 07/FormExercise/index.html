@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Exercise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>My Wonderful Form</h1>
+
+    <form action="" method="get">
+        <div class="user">
+            <label for="username">Enter your Username:</label>
+            <input type="text" name="username" id="username" placeholder="Your Username" required>
+            <p class="msg error">Must be at least 5 characters, less than 10 and in lowercase</p>
+            <p class="msg success">Valid username</p>
+        </div>
+        <br><br>
+        <div class="mail">
+            <label for="email">Enter your Email:</label>
+            <input type="email" name="email" id="email" placeholder="Your email adress" required>
+            <p class="msg error">Invalid email adress</p>
+            <p class="msg success">Valid email adress</p>
+        </div>
+        <br><br>
+        <div class="password">
+            <label for="password">Choose a Password:</label>
+            <input type="password" name="password" id="password" placeholder="Choose a Password" required>
+            <p class="msg error ">Password should be at least 5 characters</p>
+            <p class="msg success">Valid password</p>
+        </div>
+            <br><br>
+        <div class="passconf">    
+            <label for="passconf">Confirmation of Password:</label>
+            <input type="password" name="passconf" id="passconf" placeholder="Confirm your Password" required>
+            <p class="msg error">Doesn't match the password</p>
+            <p class="msg success">Confirmation valid</p>
+        </div>
+        <br><br>
+        <div class="submit">
+            <input type="submit" value="Sign In">
+        </div>
+    </form>
+</div>   
+    <script src="app.js"></script>
+</body>
+</html>
