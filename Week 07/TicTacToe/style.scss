@@ -1,0 +1,40 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Londrina+Sketch&display=swap');
+@import 'layout';
+
+
+
+h1 {
+    font-family: "Londrina Sketch", sans-serif;
+    font-size: 6rem;
+    font-weight: 800;
+    text-shadow: 2px 2px 2px rgb(228, 184, 28)/* var(--hover-color) */;
+    margin-bottom: 35px;
+    
+}
+
+p {
+ 
+    font-family: "Londrina Sketch", sans-serif;
+    font-size: 4rem;
+    font-weight: 800;
+    text-shadow: 2px 2px 2px rgb(228, 184, 28) /* var(--hover-color) */ ;
+    margin-bottom: 35px;
+}
+
+button {
+    width: 130px;
+    height: 60px;
+    border-radius: 17px;
+    font-family: "Londrina Sketch", sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color:  rgb(226, 192, 69)  ;
+    
+}
+
+button:hover {
+    transform: scale(1.2);
+    background-color:  rgb(228, 184, 28)  ;
+}

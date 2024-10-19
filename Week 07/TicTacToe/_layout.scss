@@ -1,0 +1,78 @@
+
+/* font-family: "Londrina Sketch", sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --hover-color: rgb(227, 194, 95);
+    --box-shadow-color:  rgb(211, 176, 71) 0px 10px 12px, rgb(227, 194, 95) 0px 10px 5px;
+}
+
+body {
+  
+    margin: 0 auto ;
+    display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(0, 0%, 0%);
+        background-image: radial-gradient(circle farthest-side at center, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 0%) 100%);
+        color: black;
+        gap:30px;
+                                
+}
+
+.board {
+    
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    background-color: rgb(47, 45, 45);
+    border-radius: 10px;
+    gap: 10px;
+    box-shadow: var(--box-shadow-color);
+    margin-bottom: 35px;
+}
+
+/* .board.clickedX {
+   box-shadow:  rgb(211, 176, 71) 0px 10px 12px, rgb(227, 194, 95) 0px 10px 5px;
+
+}
+.board.clickedO {
+    box-shadow:  rgb(35, 35, 160) 0px 10px 12px, rgb(35, 35, 160)  0px 10px 5px;
+} */
+
+.cell {
+    background-color: rgb(172, 170, 170);
+    font-family: "Londrina Sketch", sans-serif;
+    font-weight: 900;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    color: rgb(94, 86, 12);
+    cursor: pointer; 
+    transition: background-color 0.3s
+    
+}
+
+.cell:hover {
+    background-color: var(--hover-color) ;
+}
+
+.cell.clickedX {
+    background-color: rgb(227, 194, 95);
+    color:  rgb(35, 35, 160) ;
+
+}
+
+.cell.clickedO {
+    background-color: rgb(35, 35, 160) ;
+    color: rgb(227, 194, 95);
+}
+
