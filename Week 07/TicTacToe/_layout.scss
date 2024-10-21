@@ -27,16 +27,20 @@ body {
 }
 
 .board {
-    
     display: grid;
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(3, 100px);
     background-color: rgb(47, 45, 45);
     border-radius: 10px;
     gap: 10px;
-    box-shadow: var(--box-shadow-color);
+    /* box-shadow: var(--box-shadow-color); */
+    animation: mymove 4s infinite;
     margin-bottom: 35px;
-}
+  }
+  
+  @keyframes mymove {
+    40% {box-shadow: var(--box-shadow-color)}
+  }
 
 /* .board.clickedX {
    box-shadow:  rgb(211, 176, 71) 0px 10px 12px, rgb(227, 194, 95) 0px 10px 5px;
