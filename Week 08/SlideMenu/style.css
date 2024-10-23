@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+.container {
+    margin: auto 0;
+    padding: 30px;
+    max-width: 1110px;
+}
+
+p {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+.navbar {
+    
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: #111; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+} 
+
+.navbar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .navbar a:hover {
+    color: #f1f1f1;
+}
+
+.closebtn {
+    font-size: 2rem;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 20px;
+}
