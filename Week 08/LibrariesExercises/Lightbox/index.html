@@ -1,0 +1,81 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightbox</title>
+    <link href="https://cdn.jsdelivr.net/npm/fslightbox/index.css" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            grid-template-rows: repeat(3, 1fr);   
+            gap: 10px; 
+            width: 60vmin; 
+            height: 60vmin; 
+        }
+
+        .grid-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            border-radius: 5px; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+       
+        <a data-fslightbox="gallery" href="../Swiper/img/11-367x267.jpg">
+            <img src="../Swiper/img/11-367x267.jpg" alt="Image 1">
+        </a>
+        <a data-fslightbox="gallery" href="../Swiper/img/12-367x267.jpg">
+            <img src="../Swiper/img/12-367x267.jpg" alt="Image 2">
+        </a>
+        <a data-fslightbox="gallery" href="../Swiper/img/15-367x267.jpg">
+            <img src="../Swiper/img/15-367x267.jpg" alt="Image 3">
+        </a>
+        <a data-fslightbox="gallery" href="../Swiper/img/19-367x267.jpg">
+            <img src="../Swiper/img/19-367x267.jpg" alt="Image 4">
+        </a>
+        <a data-fslightbox="gallery" href="../Swiper/img/21-3008x2008.jpg">
+            <img src="../Swiper/img/21-3008x2008.jpg" alt="Image 5">
+        </a>
+        <a data-fslightbox="gallery" href="../Swiper/img/22-4434x3729.jpg">
+            <img src="../Swiper/img/22-4434x3729.jpg" alt="Image 6">
+        </a>
+        <a data-fslightbox="gallery" href="../Swiper/img/25-367x267.jpg">
+            <img src="../Swiper/img/25-367x267.jpg" alt="Image 7">
+        </a>
+        <a data-fslightbox="gallery" href="../Swiper/img/27-367x267.jpg">
+            <img src="../Swiper/img/27-367x267.jpg" alt="Image 8">
+        </a>
+        <a data-fslightbox="gallery" href="../Swiper/img/29-367x267.jpg">
+            <img src="../Swiper/img/29-367x267.jpg" alt="Image 9">
+        </a>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/fslightbox/index.js"></script>
+    
+
+</body>
+</html>
+
