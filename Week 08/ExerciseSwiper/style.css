@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Londrina+Sketch&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+body {
+    font-family:  "Inter", sans-serif;
+    
+}
+
+
+
+
+h3 {
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26.63px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    margin-bottom: 5px;
+    
+}
+
+h5 {
+    
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.78px;
+    text-align: left;
+    color: #C92B2B;
+    margin-bottom: 25px;
+    
+
+}
+
+p {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+
+}
+
+.container {
+    max-width: 1440px;
+    
+    
+    background-color: #0C1015 ;
+    padding: 80px;
+    justify-self: center;
+    margin: 0 auto;
+    
+}
+
+
+  .swiper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 516px;
+    gap: 20px;
+    padding: 20px;
+    
+   
+ }   
+
+ .swiper-wrapper {
+ 
+    grid-column: 2 / 3;
+    /* background-color: #24292F ; */
+    padding: 20px;
+    border-radius: 12px;
+    
+    
+    
+    
+} 
+
+
+
+
+.swiper-pagination {
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+
+    
+
+  
+    
+}
+
+.swiper-pagination-bullet {
+
+    border-radius: 15px;
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-pagination-bullet img {
+ 
+    transition: transform 0.3s ease;
+}
+
+.swiper-pagination-bullet img:hover {
+    transform: scale(1.1);
+}
+
