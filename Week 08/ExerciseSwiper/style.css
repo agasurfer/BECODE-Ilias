@@ -78,7 +78,7 @@ p {
  .swiper-wrapper {
  
     grid-column: 2 / 3;
-    /* background-color: #24292F ; */
+    
     padding: 20px;
     border-radius: 12px;
     
@@ -96,6 +96,8 @@ p {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 20px;
+    height: 490px;
+    
 
     
 
@@ -113,6 +115,8 @@ p {
 .swiper-pagination-bullet img {
  
     transition: transform 0.3s ease;
+    /* width: 150px;
+    height: 150px; */
 }
 
 .swiper-pagination-bullet img:hover {
