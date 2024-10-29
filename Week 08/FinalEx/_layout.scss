@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+body {
+    font-family: "Fredoka", sans-serif;
+    background-color: rgb(67, 61, 61);
+}
+
+.container {
+    max-width: 640px;
+    margin: 0 auto;
+    background-color: #FEFEFE;
+    /* padding: 30px; */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 0.75fr 1.25fr;
+    grid-template-rows: 1fr;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+.photo-conf {
+    grid-column: 2 / 3;
+    position: relative;
+    
+     img {
+        border-radius: 0px 0px 0px 100px;
+     }
+}
+
+.herotxt {
+    padding-top: 30px;
+    padding-left: 30px;
+
+    h1 {
+
+        padding-bottom: 30px;
+    }
+    p {
+        padding-bottom: 30px;
+    }
+
+  
+  
+}
+

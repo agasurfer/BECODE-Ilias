@@ -1,0 +1,100 @@
+.modal-form {
+    display: none;
+    position:absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    /* width: 60%; */
+    max-width: 600px;
+    border-radius: 20px;
+    z-index: 1001;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    
+
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.modal-form a {
+    font-size: 2.5rem;
+  
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #2639ED;
+    border-width: 2px;
+    outline: none;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+        input {
+            background-color: #2639ED;
+            font-family: "Fredoka", sans-serif;
+            font-size: 1rem;
+                color: #f9f9f9;
+                padding: 20px 40px;
+                border-radius: 60px;
+                height: 65px;
+                width: 215px;
+                display: inline-block;
+                text-align: center;
+                cursor: pointer;
+                transition: transform 0.2s;
+        }
+
+        input:hover {
+            transform: scale(1.1);
+        }
+}
+
+.msg {
+    display: none;
+    margin-top: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.success {
+    display: none;
+    background-color: rgba(0, 128, 0, 0.1);
+    color: green;
+    border: 1px solid green;
+}
+
+.error {
+    display: none;
+    background-color: rgba(255, 0, 0, 0.1);
+    color: red;
+    border: 1px solid red;
+}

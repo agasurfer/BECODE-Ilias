@@ -1,0 +1,33 @@
+.photo-conf::before {
+    content: "";
+    position: absolute;
+    width: 129px;
+    height: 129px;
+   /*  min-width: 60px;
+    min-height: 60px; */
+    gap: 0px;
+    background: #DAE9FF;
+    border-radius: 100px;
+    transform: translate(-50%);
+    z-index: -1;
+    
+   
+}
+
+.photo-conf::after {
+    content: "";
+    position: absolute;
+    width: 178px;
+    height: 178px;
+   /*  min-width: 80px;
+    min-height: 80px; */
+    gap: 0px;
+    border-radius: 0px 0px 100px 0px;
+    background: #FFF5DB;
+    transform: translate(-150%, 75%);
+    z-index: -1;
+}
+
+
+
+
