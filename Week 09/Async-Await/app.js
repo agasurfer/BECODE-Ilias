@@ -7,7 +7,7 @@ let generateBG = (color) => {
 
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            if (delay < 500) { 
+            if (delay < 800) { 
                 body.style.backgroundColor = color;
                 resolve();
             } else {
