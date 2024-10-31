@@ -1,0 +1,65 @@
+@import 'layout';
+@import 'mealcards';
+@import 'modal';
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+h1 {
+    font-family: "Caveat", cursive;
+    font-size: 6rem;
+    color: #ffd700;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 100px;
+}
+
+.user-query {
+    text-align: center;
+    
+}
+
+.user-query label {
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+#search {
+    width: 60%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+
+
+.submit {
+    display: inline-block;
+    text-align: center;
+    background-color: rgb(255, 153, 0);
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 15px;
+    transition: 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.submit:hover {
+    transform: scale(1.1);
+    background-color: #ffa500;
+}
+
+.user-query p {
+    font-size: 1rem;
+    color: #fff;
+    text-transform: capitalize;
+    margin-top: 15px;
+}

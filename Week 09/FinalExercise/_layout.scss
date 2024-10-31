@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(17, 2, 2);
+    font-family: "Roboto", sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.container {
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1440px;
+    min-height: 100vh;
+    background: rgb(96, 27, 27);
+    background: linear-gradient(90deg,
+            rgb(96, 27, 27) 19%,
+            rgb(154, 2, 2) 58%,
+            rgb(182, 57, 8) 83%);
+   
+}
+
+header  {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}

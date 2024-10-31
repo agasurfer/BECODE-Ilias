@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meals</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <header>
+        <!-- <div class="container"> -->
+            <h1>Adopt a Meal</h1>
+        <!-- </div> -->
+    </header>
+
+    <section class="user-query">
+        
+            <label for="search">What are you looking for?</label>
+            <br><br>
+            <input type="text" id="search" class="search" placeholder="Type in a meal or an ingredient...">
+            <a href="#" class="submit">Find</a>
+            <br><br>
+            <p class="searchMsg"></p>
+        
+    </section>
+
+            <div id="resultsGrid" class="results-grid ">
+             
+            </div>
+            
+            <div id="mealModal" class="modal ">
+                <div class="modal-content ">
+                    <span class="close">&times;</span>
+                    <img class="mealImage" src="" alt="Meal Image">
+                    <h2 class="mealTitle"></h2>
+                    <h3>Ingredients</h3>
+                    <ul class="ingredientsList"></ul>
+                    <h3>Instructions</h3>
+                    <p class="mealInstructions"></p>
+                    <h3>Watch the video</h3>
+                    <a href="" class="mealVideo"></a>
+                </div>
+            </div>
+
+    
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
