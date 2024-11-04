@@ -25,7 +25,7 @@ function displayGames(games) {
     const gameCard = document.createElement('div');
     gameCard.className = 'game-card';
 
-    gameCard.innerHTML = `<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+    gameCard.innerHTML = `<a href="https://store.steampowered.com/app/${game.steamAppID}/?l=french">
       <img src="${game.thumb}" alt="Miniature de ${game.title}" class="game-thumb">
       <h2>${game.title}</h2>
       <p><strong>Sale Price :</strong> $${game.salePrice}</p>
