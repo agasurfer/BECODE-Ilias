@@ -26,6 +26,7 @@ body {
   margin: 0 auto;
   background-color: #FEFEFE;
   /* padding: 30px; */
+  /*  padding-bottom: 30px; */
 }
 
 .header-container {
@@ -62,6 +63,18 @@ body {
 }
 .herotxt p {
   padding-bottom: 30px;
+}
+
+.ourClient {
+  padding-left: 30px;
+  padding-right: 30px;
+  display: grid;
+}
+
+.swiper-slide img {
+  max-width: 150px;
+  max-height: 50px;
+  object-fit: contain;
 }
 
 .photo-conf::before {

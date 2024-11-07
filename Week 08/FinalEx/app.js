@@ -103,11 +103,30 @@ crossForm.addEventListener('click', () => {
     
 }, 1000);
 
-
-            
-            
-            
-            
-            
         }
     });
+
+    //SWIPER
+const swiper = new Swiper('.swiper', {
+   a11y: {
+    prevSlideMessage: 'Previous',
+    nextSlideMessage: 'Next',
+  },
+
+  direction: 'horizontal',
+  speed: 400,
+  slidesPerView: 4,
+  spaceBetween: 10,
+  loop: true,
+
+   autoplay: {
+    delay: 3000,
+  },
+
+   navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+
+});
