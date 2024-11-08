@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body {
+  font-family: "Inria Sans", sans-serif;
+  background-color: rgb(53, 40, 40);
+  color: white;
+}
+
+.container {
+  background-color: #191B20;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #141517;
+}
+
+.searchbar {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 0px;
+}
+.searchbar input {
+  height: 40px;
+  border-radius: 12px 0px 0px 12px;
+  text-align: center;
+  border: none;
+}
+
+.searchbar .container {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.result-text {
+  margin-bottom: 10px;
+}
+
+.latest-releases h2 {
+  margin-bottom: 10px;
+}
+
+.genreSection .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 80px;
+}
+
+.genres {
+  display: flex;
+  gap: 30px;
+}
+
+.genreSection h2 {
+  margin-bottom: 40px;
+  margin-top: 50px;
+}
+
+hr {
+  margin-top: 20px;
+  width: 520px;
+}
+
+footer .container {
+  background-color: #141517;
+  height: 186px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  padding: 20px;
+  width: 410px;
+  height: 608px;
+  z-index: 1001;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-movie {
+  display: none;
+}
+
+.swiper-container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.movie-card {
+  cursor: pointer;
+}
+
+.movie-card img {
+  transition: transform 0.7s ease-in-out;
+  box-shadow: rgba(37, 35, 35, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+}
+
+.movie-card img:hover {
+  transform: scale(1.05);
+}
+
+.movie-info {
+  display: none;
+}
+
+.logo {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43.16px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.logo span {
+  color: #CC0000;
+}
+
+.navbar {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.79px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  display: flex;
+  gap: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+  transform: scale(1.1);
+  color: rgb(249, 77, 8);
+}
+
+input:focus {
+  outline: none;
+  border: none;
+}
+
+.searchbar a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #CC0000;
+  height: 40px;
+  width: 40px;
+  border-radius: 0px 12px 12px 0px;
+}
+
+.genres a {
+  padding: 5px;
+}
+
+.genres a:hover {
+  color: #CC0000;
+  border-radius: 8px;
+}
+
+.genres a.active {
+  background-color: #CC0000;
+  border-radius: 8px;
+}
+
+.genres a.active:hover {
+  background-color: #CC0000;
+  border-radius: 8px;
+  color: white;
+}
+
+h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: left;
+}
+
+footer .container a {
+  padding-left: 15px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.79px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  transition: 0.3s ease-in-out;
+}
+footer .container a:hover {
+  transform: scale(1.1);
+  color: rgb(249, 77, 8);
+}
+footer .container p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16.79px;
+  text-align: left;
+  color: #B8B8B8;
+}
