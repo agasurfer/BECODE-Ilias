@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+//GENERAL LAYOUT
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    
+}
+
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body {
+    font-family: "Inria Sans", sans-serif;
+    background-color: rgb(53, 40, 40);
+    color: white;
+}
+
+//CONTAINER STYLING
+
+.container {
+    background-color: #191B20;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+//HEADER DISPLAY
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #141517;
+    
+}
+
+//SEARCHBAR STYLING
+
+.searchbar {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 0px;
+    
+   
+    input {
+        height: 40px ;
+        border-radius: 12px 0px 0px 12px;
+        text-align: center;
+        border: none;
+    }
+}
+
+.searchbar .container {
+    
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.result-text {
+    margin-bottom: 10px;
+}
+
+//LATEST RELEASES STYLING
+.latest-releases h2 {
+    margin-bottom: 10px;
+}
+
+//GENRES SECTION STYLING
+
+.genreSection .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 80px;
+}
+
+.genres {
+    display: flex;
+    gap: 30px;
+}
+
+.genreSection h2 {
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+
+hr {
+    margin-top: 20px;
+    width: 520px;
+}
+
+
+//FOOTER STYLING
+
+
+
+footer .container {
+    background-color: #141517;
+    height: 186px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+ 
+
+    
+}

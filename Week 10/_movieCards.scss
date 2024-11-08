@@ -1,0 +1,22 @@
+.movie-card {
+    cursor: pointer;
+    
+   
+}
+
+.movie-card img {
+    transition: transform 0.7s ease-in-out;
+    box-shadow: rgba(37, 35, 35, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+}
+
+
+
+.movie-card img:hover {
+    transform: scale(1.05);
+}
+
+.movie-info {
+    display: none;
+}
+

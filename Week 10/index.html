@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeMovies Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="logo"><span>Be</span>Movies</div>
+            <div class="navbar">
+                <a href="#">Search</a>
+                <a href="#">Latest</a>
+                <a href="#">Genres</a>
+                <a href="#">Register</a>
+                <a href="#">Login</a>
+            </div>
+        </div>
+    </header>
+
+        <!-- SEARCHBAR SECTION -->
+    <section class="searchbar">
+        <div class="container">
+        
+            <input type="text" class="input" placeholder="Search for a movie">
+            <a href="#" class="submit">&rarr;</a>
+
+        </div>
+    </section>
+
+        <!-- MODAL HANDELING -->
+
+    <div class="modal">
+        <div class="modal-content">
+            <h2 class="signup">Signup</h2><h2 class="login">Login</h2>
+            <form>
+                <input type="text" placeholder="Username">
+                <br>
+                <input type="password" placeholder="Password">
+                <br>
+                <input type="checkbox" id="checkbox" name="checkbox">
+                
+                <label for="checkbox">Remember Me</label>
+                <br>
+                <button type="submit">Login</button>
+            </form>
+            <a href="#" class="forgot">I forgot my password</a>
+            <p>Not a member? <a href="#">Sign up</a></p>
+        </div>
+    </div>
+
+    <!-- POPUP MOVIE HANDELING -->
+
+    <div class="popup-movie">
+
+    </div>
+
+        <!-- SEARCH RESULT SECTION -->
+    <section class="searchResult">
+        <div class="container">
+            <h2 class="result-text"></h2>
+        
+            <!-- Slider main container -->
+            <div class="swiper-container swiper-result">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"></div>
+                    
+                
+                </div>
+             
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev-search"></div>
+                <div class="swiper-button-next-search"></div>
+            
+              
+            </div>
+        </div>
+    </section>
+
+
+        <!-- LATEST RELEASES SECTION -->
+    <section class="latest-releases">
+        <div class="container">
+            
+            <h2>Latest Releases</h2> 
+
+            <!-- Slider main container -->
+            <div class="swiper-container swiper-releases">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"></div>
+                    
+            
+                </div>
+              
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev-release"></div>
+                <div class="swiper-button-next-release"></div>
+            
+                
+            </div>
+        
+        </div>
+    </section>
+
+        <!-- GENRES SECTION -->
+
+    <section class="genreSection">
+        <div class="container">
+            
+            <h2>Movies by genre</h2>
+           
+            <div class="genres">
+                <a href="#" class="comedy">Comedy</a>
+                <a href="#" class="drama">Drama</a>
+                <a href="#" class="action">Action</a>
+                <a href="#" class="romance">Thriller</a>
+                <a href="#" class="fantasy">Fantasy</a>
+                <a href="#" class="animation">Animation</a>
+            </div>
+
+            <hr>
+
+            <h2 class="selected-genre"></h2>
+
+            <!-- Slider main container -->
+            <div class="swiper-container swiper-genres">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"></div>
+            
+                </div>
+        
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev-genres"></div>
+                <div class="swiper-button-next-genres"></div>
+            
+            </div>
+        </div>
+        </section>
+
+        <!-- FOOTER -->
+
+        <footer>
+            <div class="container">
+
+                <div class="logo"><span>Be</span>Movies</div>
+                <div class="footer-links">
+                    <a href="#">Search</a>
+                    <a href="#">Latest</a>
+                    <a href="#">Genres</a>
+                    <a href="#">Register</a>
+                    <a href="#">Sign In</a>
+                </div>
+                <p>&copy; 2025 - All rights reserved.</p>
+
+            </div>
+        </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
