@@ -37,20 +37,25 @@
 
     <div class="modal">
         <div class="modal-content">
-            <h2 class="signup">Signup</h2><h2 class="login">Login</h2>
+            <a href="#" class="close">&times;</a>
+            <div class="btn-group">
+                <a href="#" class="signup">SIGNUP</a><a href="#" class="login">LOGIN</a>
+            </div>
             <form>
                 <input type="text" placeholder="Username">
                 <br>
                 <input type="password" placeholder="Password">
                 <br>
+                <div class="checkbox-container">
                 <input type="checkbox" id="checkbox" name="checkbox">
                 
-                <label for="checkbox">Remember Me</label>
+                <label for="checkbox" class="remember">Remember Me</label>
+                </div>
                 <br>
-                <button type="submit">Login</button>
+                <button type="submit" class="loginBtn">LOGIN</button>
             </form>
             <a href="#" class="forgot">I forgot my password</a>
-            <p>Not a member? <a href="#">Sign up</a></p>
+            <p>Not a member? <a href="#" class="signB">Sign up</a></p>
         </div>
     </div>
 
