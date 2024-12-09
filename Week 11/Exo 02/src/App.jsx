@@ -7,7 +7,7 @@ const App = () => {
 //USESTATES
 
 const [todos, setTodos] = useState([]);
-const [newTodo, setnewTodo] = useState("");
+const [newTodo, setNewTodo] = useState("");
 const [editingTodo, setEditingTodo] = useState(null);
 
 //Async function declaration that adds todo to the "server"
@@ -28,7 +28,7 @@ const handleAddTodo = async () => {
       if (response.ok) {
         const createdTodo = await response.json();
         setTodos([...todos, createdTodo]); 
-        setnewTodo(""); 
+        setNewTodo(""); 
       } else {
         console.error("Failed to add todo:");
       }
@@ -56,18 +56,60 @@ const handleAddTodo = async () => {
     }
   };
 
-  //function declaration to handle edit process
 
-  const handleEdit = (idToEdit) => {
+
+// Fonction pour gérer la mise à jour d'une tâche
+
+const handleEdit = (idToEdit) => {
   // Find the todo to be edited
   const todoToEdit = todos.find((todo) => todo.id === idToEdit);
+
+   setEditingTodo(todoToEdit);
   
-  // Set the editing state
-  setEditingTodo(todoToEdit);
   setNewTodo(todoToEdit.todo);
+
+
+}
+const handleUpdateTodo = async () => {
+  if (newTodo.trim() !== '' && editingTodo !== null) {
+    try {
+      const updatedTodo = { ...editingTodo, todo: newTodo };
+
+      const response = await fetch(`http://localhost:3000/todos/${editingTodo.id}`, {
+        method: "PUT",  
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(updatedTodo),
+      });
+
+      if (response.ok) {
+        // Mettre à jour localement la liste des tâches
+        setTodos(todos.map((todo) => (todo.id === editingTodo.id ? updatedTodo : todo)));
+        setEditingTodo(null); // Quitter le mode édition
+        setNewTodo(""); // Réinitialiser l'input
+      } else {
+        console.error("Failed to update todo");
+      }
+    } catch (error) {
+      console.error("Error updating todo:", error);
+    }
+  }
 };
 
-  //async function declaration to save edited todos
+
+// Mettre à jour la logique du bouton pour basculer entre ajout et mise à jour
+const handleAddOrUpdateTodo = () => {
+  if (editingTodo !== null) {
+    handleUpdateTodo();
+  } else {
+    handleAddTodo();
+  }
+};
+
+
+
+  
 
 
 //USEEFFECT
@@ -107,12 +149,12 @@ useEffect(() => {
       className='todoInput'
       placeholder='Insert Todo'
       value={newTodo}
-      onChange={(e) => setnewTodo(e.target.value)} />
+      onChange={(e) => setNewTodo(e.target.value)} />
       <button 
       className='addTodo'
       type='submit'
-      onClick={handleAddTodo}
-      >Add</button>
+      onClick={handleAddOrUpdateTodo}
+      >{editingTodo !== null ? 'Edit' : 'Add'}</button>
       </div>
 
       {todos.length !== 0 && 
