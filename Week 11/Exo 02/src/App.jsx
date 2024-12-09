@@ -58,7 +58,7 @@ const handleAddTodo = async () => {
 
 
 
-// Fonction pour gérer la mise à jour d'une tâche
+// Function to handle Todo edits
 
 const handleEdit = (idToEdit) => {
   // Find the todo to be edited
@@ -69,7 +69,11 @@ const handleEdit = (idToEdit) => {
   setNewTodo(todoToEdit.todo);
 
 
-}
+};
+
+// Async function declaration that updates the todo in the server
+
+
 const handleUpdateTodo = async () => {
   if (newTodo.trim() !== '' && editingTodo !== null) {
     try {
@@ -84,10 +88,10 @@ const handleUpdateTodo = async () => {
       });
 
       if (response.ok) {
-        // Mettre à jour localement la liste des tâches
+        // Update ul list localy
         setTodos(todos.map((todo) => (todo.id === editingTodo.id ? updatedTodo : todo)));
-        setEditingTodo(null); // Quitter le mode édition
-        setNewTodo(""); // Réinitialiser l'input
+        setEditingTodo(null); //Go back to "adding mode"
+        setNewTodo(""); // Erase input field
       } else {
         console.error("Failed to update todo");
       }
@@ -98,7 +102,7 @@ const handleUpdateTodo = async () => {
 };
 
 
-// Mettre à jour la logique du bouton pour basculer entre ajout et mise à jour
+// Logic to toggle the button add/edit
 const handleAddOrUpdateTodo = () => {
   if (editingTodo !== null) {
     handleUpdateTodo();
@@ -106,10 +110,6 @@ const handleAddOrUpdateTodo = () => {
     handleAddTodo();
   }
 };
-
-
-
-  
 
 
 //USEEFFECT
