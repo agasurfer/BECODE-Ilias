@@ -1,0 +1,42 @@
+h1 span {
+    color: rgb(249, 210, 36);
+}
+
+h1 {
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .navbar {
+    margin-bottom: 50px;
+}
+
+.navlink {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease-in-out;
+    
+}
+
+.navlink:hover {
+    color: rgb(246, 255, 0) ;
+    transform: scale(1.1);
+}
+
+.navlink:active {
+    background-color: rgb(246, 255, 0);
+}
+
+.navlinks {
+    display: flex;
+    gap: 15px;
+}
+
+
+

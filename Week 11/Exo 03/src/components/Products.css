@@ -1,0 +1,17 @@
+.products {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  
+    
+}
+
+
+
+
+
+
+
