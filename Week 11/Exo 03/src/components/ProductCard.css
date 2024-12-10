@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 350px;
+    height: 380px;
     width: 200px;
     gap: 10px;
     border-radius: 12px;
@@ -44,4 +44,28 @@
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+}
+
+.editBtn {
+    width: 80px;
+    height: 20px;
+    border-radius: 12px;
+    color:rgb(246, 255, 0);
+     background: #7474BF;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #348AC7, #7474BF);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #509acf, #8686be);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        transition: 0.3s ease-in-out;
+
+        outline: none;
+        border: none;
+        cursor: pointer;
+}
+
+.editBtn:hover {
+transform: scale(1.1);
+color: rgb(255, 136, 0);
 }

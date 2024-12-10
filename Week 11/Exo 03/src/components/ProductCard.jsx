@@ -1,5 +1,6 @@
 import React from 'react'
 import './ProductCard.css'
+import { Link } from 'react-router-dom'
 
 const ProductCard = ({products}) => {
 
@@ -14,6 +15,7 @@ const ProductCard = ({products}) => {
         <p className="year">{products.year}</p>
         <p className="stock">{products.stock} in stock</p>
         </div>
+        <Link to="/edit-product"><button className='editBtn'>Edit</button></Link>
 
         </div>
   )

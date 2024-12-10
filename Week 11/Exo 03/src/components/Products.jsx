@@ -18,7 +18,7 @@ const Products = () => {
         const response = await fetch(apiUrl);
         const data = await response.json()
         setProducts(data)
-        console.log(products);
+        
         
         
         } catch (error) {
@@ -38,10 +38,10 @@ const Products = () => {
 
   return (
    <div className="container">
-    <div className='products'>
+    <div className='products' >
           {products.map((product) => (
 
-            <ProductCard key= {products.id} products= {product} />
+            <ProductCard key= {product.id} products= {product} />
 
          ))}
          </div>
