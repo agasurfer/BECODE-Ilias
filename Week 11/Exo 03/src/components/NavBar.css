@@ -25,13 +25,11 @@ h1 {
 }
 
 .navlink:hover {
-    color: rgb(246, 255, 0) ;
+    color: #f6ff00 ;
     transform: scale(1.1);
 }
 
-.navlink:active {
-    background-color: rgb(246, 255, 0);
-}
+
 
 .navlinks {
     display: flex;

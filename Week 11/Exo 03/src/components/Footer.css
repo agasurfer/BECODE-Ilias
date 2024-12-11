@@ -1,0 +1,28 @@
+.container .footer {
+    margin-top: 50px;
+}
+
+ .footer .logo h1 {
+    font-size: 1.2rem;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footlink {
+    text-decoration: none;
+    color:white ;
+    transition: 0.3s ease-in-out;
+}
+.footlink:hover {
+    color: #f6ff00;
+    transform: scale(1.1);
+}
+
+.footer li {
+    list-style: none;
+}
