@@ -1,0 +1,63 @@
+.editForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 12px;
+
+}
+
+.container .editForm {
+    border-radius: 8px;
+    margin-bottom: 50px;
+    background: #7474BF;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #348AC7, #7474BF);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #348AC7, #7474BF);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.editForm input {
+    width: 250px;
+    height: 30px;
+    padding: 5px;
+
+}
+
+.editBtn, .deleteBtn {
+    width: 80px;
+    height: 20px;
+    border-radius: 12px;
+    background-color: rgb(249, 210, 36);
+    color: #547FC3;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.3s ease-in-out;
+
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.editBtn:hover {
+    transform: scale(1.1);
+    color: #326cc9;
+    ;
+}
+
+.error {
+    color: red;
+}
+
+.deleteBtn {
+    background-color: red;
+    color: bisque;
+}
+
+.btngroup {
+    display: flex;
+    gap: 30px;
+}

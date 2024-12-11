@@ -74,7 +74,7 @@ const handleMinusStock = async () => {
         onClick={handlePlusStock}>+</button><button
         onClick={handleMinusStock}>-</button></div>
         </div>
-        <Link to="/edit-product"><button className='editBtn'>Edit</button></Link>
+        <Link to={`/edit-product/${products.id}`}><button className='editBtn'>Edit</button></Link>
 
         </div>
   )

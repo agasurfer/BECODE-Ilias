@@ -10,11 +10,11 @@
     padding: 10px;
     
     
-        background: #7474BF;
+        background: #8585c0;
         /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #348AC7, #7474BF);
+        background: -webkit-linear-gradient(to right, #5199cc, #9595c9);
         /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #348AC7, #7474BF);
+        background: linear-gradient(to right, #69a0c7, #7474BF);
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         transition: 0.3s ease-in-out;

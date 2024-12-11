@@ -137,7 +137,7 @@ const handleAddProduct = async (e) => {
           draggable: true,
           theme: "colored",
           style: {
-            background: "#6E75BF",
+            background: "#3E86C5",
             color: "#f6ff00"
           }
         });
