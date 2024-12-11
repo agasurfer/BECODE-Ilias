@@ -1,5 +1,12 @@
 .container .footer {
+    border-radius: 8px;
     margin-top: 50px;
+    background: #7474BF;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #348AC7, #7474BF);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #348AC7, #7474BF);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
  .footer .logo h1 {
@@ -25,4 +32,16 @@
 
 .footer li {
     list-style: none;
+}
+
+.legal {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }

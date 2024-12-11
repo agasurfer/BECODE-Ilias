@@ -9,6 +9,7 @@ import './AddProduct.css';
 
 const AddProduct = () => {
 
+  //Will redirect after adding
   const navigate = useNavigate();
 
 
@@ -25,21 +26,21 @@ const AddProduct = () => {
 
   const [validationErrors, setValidationErrors] = useState({});
 
-  // Validation des données avant envoi
+  // Validation before sending
   const validateProductData = () => {
     const errors = {};
 
-    // Validation du titre
+    // Title validation 
     if (!newData.title.trim()) {
       errors.title = "Product must have a name";
     }
 
-    // Validation du prix
+    // Price validation
     if (!newData.price || isNaN(parseFloat(newData.price))) {
       errors.price = "Price must me a valid number";
     }
 
-    // Validation de l'année
+    // Year Validation
     const currentYear = new Date().getFullYear();
     if (!newData.year || 
         isNaN(parseInt(newData.year)) || 
@@ -48,13 +49,21 @@ const AddProduct = () => {
       errors.year = "Year must be between 1900 and 5 years from now";
     }
 
-    // Validation du stock
+    // Stock validation
     if (!newData.stock || isNaN(parseInt(newData.stock)) || parseInt(newData.stock) < 0) {
       errors.stock = "Invalid Stock";
     }
 
     setValidationErrors(errors);
-    return Object.keys(errors).length === 0;
+    return Object.keys(errors).length === 0; //returns a boolean 
+    //does the same than
+
+    /* if (Object.keys(errors).length === 0) {
+  return true; 
+} else {
+  return false; 
+} */
+
   };
 //FUNCTION DECLARATION THAT HANDLES THE CHANGES IN THE ADDING INPUTS
 
@@ -71,7 +80,7 @@ const handleAddChange = (e) => {
       ...prev,
       [name]: value
     }));
-    // Efface l'erreur spécifique quand l'utilisateur corrige
+    // Erase the error if the user corrects
     if (validationErrors[name]) {
       setValidationErrors(prev => ({
         ...prev,
@@ -92,7 +101,7 @@ const handleAddProduct = async (e) => {
   e.preventDefault();
 
   if (!validateProductData()) {
-      return; // Arrête si validation échoue
+      return; // Stop if data not valid
     }
    
    

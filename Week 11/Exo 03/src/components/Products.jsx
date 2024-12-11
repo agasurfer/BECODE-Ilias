@@ -37,14 +37,14 @@ const Products = () => {
 
 
   return (
-   <div className="container">
-    <div className='products' >
+   <div className="container products">
+    
           {products.map((product) => (
 
             <ProductCard key= {product.id} products= {product} />
 
          ))}
-         </div>
+         
          </div>
   )
 }
