@@ -15,10 +15,10 @@ const AddProduct = () => {
 
   const [newData, setNewData] = useState({
     title: '',
-    price: '',
+    price: undefined,
     currency: '€',
     year: '',
-    stock: '',
+    stock: undefined,
     imgSrc: ''
   });
 
@@ -102,7 +102,15 @@ const handleAddProduct = async (e) => {
 
   if (!validateProductData()) {
       return; // Stop if data not valid
+
     }
+
+  const formattedData = {
+    ...newData,
+    price: parseFloat(newData.price),
+    stock: parseInt(newData.stock, 10),
+  };
+  
    
    
     try {
@@ -111,7 +119,7 @@ const handleAddProduct = async (e) => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(newData),
+        body: JSON.stringify(formattedData),
       });
 
       if (response.ok) {
@@ -130,7 +138,7 @@ const handleAddProduct = async (e) => {
 
          toast.success(`Produit "${newData.title}" ajouté avec succès !`, {
           position: "top-right",
-          autoClose: 4000,
+          autoClose: 3000,
           hideProgressBar: false,
           closeOnClick: true,
           pauseOnHover: true,

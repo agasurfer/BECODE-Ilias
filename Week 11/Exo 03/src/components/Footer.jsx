@@ -22,7 +22,7 @@ const Footer = () => {
         onClick={scrollToTop}
         >Return to top</Link></div>
         <div className="legal">
-            <p>&copy; 2024 <span>Becode Hardware</span>. All rights reserved.</p>
+            <p>&copy; 2025 <span>Becode Hardware</span>. All rights reserved.</p>
         <ul>
             <li><Link className='footlink' to="/">Privacy Policy</Link></li>
             <li><Link className='footlink' to="/">Terms & Conditions</Link></li>
