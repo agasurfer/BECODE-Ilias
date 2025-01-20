@@ -69,7 +69,7 @@ const [newTodo, setNewTodo] = useState('');
         onChange={(e) => setNewTodo(e.target.value)} />
 
         
-        <button type="submit">Add</button></div>
+        <button type="submit">➕</button></div>
         
       </form>
 
@@ -77,7 +77,9 @@ const [newTodo, setNewTodo] = useState('');
                 {todos.map((todo) => (
                     <li key={todo._id}>
                         {todo.todo}{' '}
-                        <button onClick={() => deleteTodo(todo._id)}>Delete</button>
+                        <button 
+                        onClick={() => deleteTodo(todo._id)}
+                        className='deletebtn'>🗑️</button>
                     </li>
                 ))}
             </ul>

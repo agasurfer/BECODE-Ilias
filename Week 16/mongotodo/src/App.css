@@ -47,6 +47,10 @@ input {
   cursor: pointer;
 }
 
+.deletebtn {
+  background-color: rgb(255, 115, 0);
+}
+
 ul {
     background-color: rgb(243, 238, 238);
       padding: 40px;
