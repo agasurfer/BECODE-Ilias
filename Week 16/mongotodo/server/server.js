@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose')
+const cors = require('cors');
 
 const todosRoutes = require('./routes/todos');
 
@@ -9,6 +10,8 @@ const port = 3000;
 //Middlewares
 
 app.use(express.json())
+
+app.use(cors());
 
 
 //Connect to Db
@@ -25,7 +28,7 @@ connectToDatabase();
 
 //Routes
 
-app.use('/todos', todosRoutes);
+app.use('/api/todos', todosRoutes);
 
 //Server init
 

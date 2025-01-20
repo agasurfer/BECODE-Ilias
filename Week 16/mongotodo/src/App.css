@@ -35,12 +35,30 @@ input {
   height: 25px;
 }
 
-button {
+ button {
+  
   margin-left: 10px;
   padding: 5px 10px 5px 10px;
-
+  font-weight: bold;
   border-radius: 8px;
-  border: none;
+  border: black 0.5px solid;
   background-color: rgb(81, 199, 2);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 20px -5px;
   cursor: pointer;
+}
+
+ul {
+    background-color: rgb(243, 238, 238);
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 900px;
+      min-width: 380px;
+      gap: 15px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      border-radius: 15px;
+      box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
